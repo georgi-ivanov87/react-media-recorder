@@ -40,6 +40,8 @@ export type StatusMessages =
   | "acquiring_media"
   | "delayed_start"
   | "recording"
+  | "paused"
+  | "resume"
   | "stopping"
   | "stopped";
 
