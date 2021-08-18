@@ -209,11 +209,13 @@ export function useReactMediaRecorder({
   const pauseRecording = () => {
     if (mediaRecorder.current && mediaRecorder.current.state === "recording") {
       mediaRecorder.current.pause();
+      setStatus('paused');
     }
   };
   const resumeRecording = () => {
     if (mediaRecorder.current && mediaRecorder.current.state === "paused") {
       mediaRecorder.current.resume();
+      setStatus('recording');
     }
   };
 
